@@ -1,0 +1,29 @@
+-date necesare
+
+1.avion
+2.coordonate
+3.date de plecare/sosire
+4.directie
+5.cost
+6.locatia de unde pleaca/unde ajunge
+7.cat dureaza zborul
+8. info despre escale
+9.status
+
+-cream zborurile ( status) //George
+-sa afisam separat de unde pleaca/ unde ajunge
+-sa putem sterge/adauga zboruri
+-sa putem lega zborurile la anumite orase( definim separat orasele )
+
+-sa afisam separat de unde pleaca/ unde ajunge:
+toate zborurile
+-filtru cu care cautam de unde pleaca zborul //Bogdan si Alexia
+-filtru cu care cautam unde trebuie sa ajunga zborul //Bogdan si Alexia
+
+-sa stergem un anumit zbor //Tatiana
+-sa cream un oras //Sebastian si Nechita
+-sa stergem un oras //Dora si Andrada 
+-sa afisam zborul in detaliu
+
+
+
