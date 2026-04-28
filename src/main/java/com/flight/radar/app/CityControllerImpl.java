@@ -3,14 +3,22 @@ import com.flight.radar.api.controller.CityController;
 import com.flight.radar.api.response.CityResponseDto;
 import com.flight.radar.app.service.CityConverter;
 import com.flight.radar.app.service.CityService;
+import com.flight.radar.api.request.CityRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.RestController;
+
 import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
 public class CityControllerImpl implements CityController {
    private final CityService cityService;
+
+    @Override
+    public void addDetails(CityRequestDto requestDto) {
+        var request= CityConverter.convertToCityRequest(requestDto);
+        cityService.addDetails(request);
+    }
 
     @Override
     public void deleteCity(Long cityId) {
