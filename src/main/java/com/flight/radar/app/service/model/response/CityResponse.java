@@ -1,4 +1,4 @@
-package com.flight.radar.app.service.model;
+package com.flight.radar.app.service.model.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

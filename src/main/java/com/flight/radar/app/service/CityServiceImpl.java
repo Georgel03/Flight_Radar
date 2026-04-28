@@ -1,6 +1,8 @@
 package com.flight.radar.app.service;
 import com.flight.radar.app.repository.CityRepository;
-import com.flight.radar.app.service.model.CityResponse;
+import com.flight.radar.app.service.model.response.CityResponse;
+import com.flight.radar.app.service.model.request.CityRequest;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -21,5 +23,13 @@ public class CityServiceImpl implements CityService {
     public void deleteCity(Long id) {
             cityRepository.deleteById(id);
         }
+
+    @Transactional
+    @Override
+    public void addDetails(CityRequest cityRequest) {
+        var entity = CityConverter.convertToCityEntity(cityRequest);
+        cityRepository.save(entity);
+    }
+
     }
 
