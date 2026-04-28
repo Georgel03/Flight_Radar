@@ -31,7 +31,7 @@ public class FlightEntityMapperConverter {
         return FlightResponse.builder()
                 .id(entity.getId())
                 .airplaneName(entity.getAirplaneName())
-                .coordinates(entity.getCoordinates())
+                .coordonates(entity.getCoordinates())
                 .departureDate(entity.getDepartureDate())
                 .arrivalDate(entity.getArrivalDate())
                 .direction(entity.getDirection())

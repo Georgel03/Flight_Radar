@@ -1,4 +1,4 @@
-package com.flight.radar.app.service.model.response;
+package com.flight.radar.api.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,17 +11,16 @@ import java.time.LocalDateTime;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class FlightResponse {
+public class FlightResponseDto {
 
     private Integer id;
     private String airplaneName;
     private String coordonates;
-    private LocalDateTime departureDate;
     private LocalDateTime arrivalDate;
     private String direction;
     private Double cost;
-    private Integer departureLocation;
-    private Integer arrivalLocation;
+    private Integer departureLocationId;
+    private Integer arrivalLocationId;
     private Integer duration;
     private String status;
 }

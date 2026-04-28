@@ -34,7 +34,7 @@ public class FlightConverter {
         return FlightResponseDto.builder()
                 .id(model.getId())
                 .airplaneName(model.getAirplaneName())
-                .coordinates(model.getCoordinates())
+                .coordinates(model.getCoordonates())
                 .departureDate(model.getDepartureDate())
                 .arrivalDate(model.getArrivalDate())
                 .direction(model.getDirection())
