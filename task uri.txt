@@ -7,10 +7,10 @@
 5.cost
 6.locatia de unde pleaca/unde ajunge
 7.cat dureaza zborul
-8. info despre escale
+8.info despre escale
 9.status
 
--cream zborurile ( status) //George
+-cream zborurile ( status ) //George
 -sa afisam separat de unde pleaca/ unde ajunge
 -sa putem sterge/adauga zboruri
 -sa putem lega zborurile la anumite orase( definim separat orasele )
